@@ -8,7 +8,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
+      if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -35,6 +35,9 @@ export default function Header() {
         <li className="nav-button" onClick={() => scrollToSection('box')}>Box</li>
         <li className="nav-button" onClick={() => scrollToSection('bartlett')}>Bartlett</li>
         <li className="nav-button" onClick={() => scrollToSection('gaussian')}>Gaussian</li>
+        <li className="nav-button" onClick={() => scrollToSection('box_gray')}>Box Gray</li>
+        <li className="nav-button" onClick={() => scrollToSection('bartlett_gray')}>Bartlett Gray</li>
+        <li className="nav-button" onClick={() => scrollToSection('gaussian_gray')}>Gaussian Gray</li>
         <li className="nav-button" onClick={() => scrollToSection('laplacian')}>Laplacian</li>
       </ul>
     </nav>
